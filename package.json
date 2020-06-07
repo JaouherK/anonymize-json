@@ -1,0 +1,42 @@
+{
+  "name": "anonymize-json",
+  "version": "1.0.0",
+  "description": "library to anonymize some fields of a json out of a blacklisted array of keys",
+  "main": "src/index",
+  "bin": "bin/anonymize-json.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaouherK/anonymize-json.git"
+  },
+  "keywords": [
+    "anonymize",
+    "hide",
+    "filter",
+    "projection",
+    "mask",
+    "json",
+    "keys"
+  ],
+  "author": "JaouherK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaouherK/anonymize-json/issues"
+  },
+  "homepage": "https://github.com/JaouherK/anonymize-json#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.9",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  }
+}
